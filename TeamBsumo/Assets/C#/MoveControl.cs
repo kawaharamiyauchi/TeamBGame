@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MoveControl : MonoBehaviour
 {
+
+    
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -22,17 +25,17 @@ public class MoveControl : MonoBehaviour
         MeshRenderer mr = gameObject.GetComponent<MeshRenderer>();
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            move.x = -0.1f;
+            move.x = -10.0f;
         }
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            move.x = 0.1f;
+            move.x = 10.0f;
         }
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            move.y += 0.5f;
+            move.y += 50.0f;
         }
-        move.y -= 0.04f;
+        move.y -= 4.0f;
         charaCon.Move(move);
 
         //Star star = GameObject.FindObjectOfType<Star>();
