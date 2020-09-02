@@ -1,0 +1,29 @@
+Player 仕様
+
+ステータス（struct PlayerInfo）
+
+HP		変数　HP	:Max 100
+必殺技ゲージ　	変数　MP	:Max 100
+スタミナ	変数　Stamina	:Max 100
+
+状態遷移(enum PlayerState)
+
+準備（開幕までの待機モーション）	:preparation
+開幕（スタートダッシュモーション）	:startdash
+
+通常（立ちモーション）			:normal
+
+ガード（ガードモーション）		:guard	
+投げ（投げモーション）			:throw
+通常攻撃（突っ張りモーション）		:normalattack
+
+被弾（被弾モーション）			:damage
+敗北（敗北モーション）			:lose
+	
+
+//ダメージ関数
+Damage(int damage){
+	HP-damage
+	MP+damage
+	};
+
