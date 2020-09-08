@@ -5,14 +5,14 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    struct PlayerInfo
-    {
-        public int HP;          //プレイヤーの体力
-        public int MP;          //プレイヤーの必殺技ゲージ
-        public int Stamina;     //プレイヤーのスタミナ
-    }
+    //public struct PlayerInfo
+    //{
+        public int HP =100;          //プレイヤーの体力
+        public int MP =100;          //プレイヤーの必殺技ゲージ
+        public int Stamina =100;     //プレイヤーのスタミナ
+    //}
 
-    enum PlayerState
+    public enum PlayerState
     {
         preparation,
         startdash,
@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
         damage,
         
     }
-    
+    public PlayerState p_state;
     // Start is called before the first frame update
     void Start()
     {
