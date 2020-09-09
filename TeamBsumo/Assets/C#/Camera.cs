@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Camera : MonoBehaviour
 {
+    public GameObject stPlayer; //1Pプレイヤー
+    public GameObject ndPlayer; //2Pプレイヤー
+
+
 
     // Start is called before the first frame update
     void Start()
