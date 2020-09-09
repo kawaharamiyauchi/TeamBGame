@@ -29,9 +29,27 @@ public class Player : MonoBehaviour
         {
             return Stamina;
         }
+
+        public void SetHP(int hp)
+        {
+            HP = hp;
+        }
+        public void SetMP(int mp)
+        {
+            MP = mp;
+        }
+        public void SetStamina(int stamina)
+        {
+            Stamina = stamina;
+        }
     }
 
-    public PlayerInfo p_Info =new PlayerInfo();
+    PlayerInfo p_Info =new PlayerInfo();
+
+    public PlayerInfo GetPlayerInformation()
+    {
+        return p_Info;
+    }
     public int P_HP;
     public int P_MP;
     public int P_Stamina;
@@ -58,11 +76,20 @@ public class Player : MonoBehaviour
     public PlayerState p_state;
     public PlayerType p_type;
 
-    
+    public Player enemy;
+    public void SetEnemy(Player ene)
+    {
+        enemy = ene;
+    }
+   public  PlayerInfo enemyInfo;
+
     // Start is called before the first frame update
     void Start()
     {
         p_Info.InitData(100,100,100);
+       enemyInfo = enemy.GetComponent<Player>().GetPlayerInformation();
+        
+
     }
 
     // Update is called once per frame
