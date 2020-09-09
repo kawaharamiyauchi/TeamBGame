@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:TeamBsumo/Assets/parts/Player type1.prefab.meta
 guid: f96e4a779b52eff4da1768d7006f646f
 PrefabImporter:
+=======
+guid: 215508e39d3296a4a9446bbfb33cc56d
+folderAsset: yes
+DefaultImporter:
+>>>>>>> 4a06a5f9d9e0233416f849eef1c5e51732ce68e0:TeamBsumo/Assets/Music/SE.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
