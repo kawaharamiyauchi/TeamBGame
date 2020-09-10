@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:TeamBsumo/Assets/Sprite.meta
+guid: 9e8c34a49d8142c4881726968f958b76
+=======
 guid: b6d2dc1ff5301fc4dbf0453b9894910f
+>>>>>>> 80db4724cb84dd17bb74242d50d6ba63341bdf0c:TeamBsumo/Assets/Sprite.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
