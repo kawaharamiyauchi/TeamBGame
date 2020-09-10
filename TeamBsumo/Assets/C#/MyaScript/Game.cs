@@ -17,8 +17,9 @@ public class Game : MonoBehaviour
         secondPlayer =Instantiate(m_player_03, new Vector3(100.0f, 10.0f, 40.0f), Quaternion.identity);
 
         firstPlayer.gameObject.GetComponent<Player>().SetEnemy(secondPlayer);
+        firstPlayer.gameObject.GetComponent<Player>().SetPlayerNum(Player.PlayerNum.FirstPlayer_1P);
         secondPlayer.gameObject.GetComponent<Player>().SetEnemy(firstPlayer);
-
+        secondPlayer.gameObject.GetComponent<Player>().SetPlayerNum(Player.PlayerNum.SecondPlayer_2P);
     }
     // Start is called before the first frame update
     void Start()
