@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/SampleScenes/Sample_Wada.unity
+- path: Assets/SampleScenes/Sample_Mya.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
