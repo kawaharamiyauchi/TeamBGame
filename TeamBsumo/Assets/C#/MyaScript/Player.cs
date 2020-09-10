@@ -11,6 +11,8 @@ public class Player : MonoBehaviour
         private int MP;          //プレイヤーの必殺技ゲージ
         private int Stamina;     //プレイヤーのスタミナ
 
+
+
         public void InitData(int hp,int mp,int stamina)
         {
            HP = hp;
@@ -73,9 +75,21 @@ public class Player : MonoBehaviour
         TWO,
         THREE
     }
+
+    public enum PlayerNum
+    {
+        FirstPlayer_1P,
+        SecondPlayer_2P
+    }
+
     public PlayerState p_state;
     public PlayerType p_type;
+    public PlayerNum p_num;
 
+    public void SetPlayerNum(PlayerNum num)
+    {
+        p_num = num;
+    }
     public Player enemy;
     public void SetEnemy(Player ene)
     {
